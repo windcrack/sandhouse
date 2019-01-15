@@ -79,6 +79,37 @@ header{
 		// }
 	}
 }
+.advantages{
+	color: #fff;
+	background: url('../img/advantagesBg.jpg') no-repeat center;
+	h2{
+		font-weight: 600;
+		font-size: 3rem;
+		text-align: center;
+	}
+	.advBlock{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.advBlockText{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: 2rem 2rem;
+			width: 15rem;
+			float: left;
+			.imgTitle{
+				margin: 1rem auto;
+			}
+			.advText{
+				font-weight: 600;
+				font-size: 0.875rem;
+				text-align: center;
+			}
+		}
+	}
+	
+}
 
 
 @import 'media';

@@ -82,4 +82,35 @@ header {
   justify-content: space-between;
 }
 
+.advantages {
+  color: #fff;
+  background: url("../img/advantagesBg.jpg") no-repeat center;
+}
+.advantages h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+.advantages .advBlock {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages .advBlock .advBlockText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 2rem;
+  width: 15rem;
+  float: left;
+}
+.advantages .advBlock .advBlockText .imgTitle {
+  margin: 1rem auto;
+}
+.advantages .advBlock .advBlockText .advText {
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
