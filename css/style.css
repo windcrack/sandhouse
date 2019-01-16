@@ -24,6 +24,7 @@ header {
   flex-direction: column;
   background: url("../img/headerBg.jpg") no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 .mainBlock .header {
   display: flex;
@@ -47,7 +48,7 @@ header {
 }
 .mainBlock .arrowDown {
   margin: auto;
-  padding-top: 10.625rem;
+  padding-top: 27.625rem;
   cursor: pointer;
 }
 
@@ -91,6 +92,7 @@ h2 {
 .advantages {
   color: #fff;
   background: url("../img/advantagesBg.jpg") no-repeat center;
+  background-size: cover;
 }
 .advantages .title {
   padding-top: 2.5rem;
@@ -115,6 +117,10 @@ h2 {
   font-weight: 600;
   font-size: 0.875rem;
   text-align: center;
+}
+
+.slick-slide img {
+  padding: 1rem;
 }
 
 .comment {
@@ -159,7 +165,65 @@ h2 {
 }
 
 .contactForm {
-  background: url(novosele--vazhnoe-i-radostnoe-sobytie.jpg) no-repeat center;
+  background: url("../img/commBg.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+}
+.contactForm .mainFormBlock {
+  margin-left: auto;
+  margin-top: 5.625rem;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-11rem);
+}
+.contactForm .mainFormBlock .title {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.contactForm .mainFormBlock .formBlock {
+  display: flex;
+  flex-direction: column;
+}
+.contactForm .mainFormBlock .formBlock input,
+.contactForm .mainFormBlock .formBlock textarea {
+  margin-bottom: 1.25rem;
+  padding: 10px 0 10px 5px;
+  background-color: #F9E8AC;
+  border: 1px solid #000000;
+}
+.contactForm .mainFormBlock .callBack {
+  margin: 1rem auto;
+  width: 208px;
+  height: 55px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #000;
+}
+.contactForm .mainFormBlock p {
+  font-weight: 300;
+  font-size: 9px;
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+footer {
+  color: #fff;
+  background: linear-gradient(299.87deg, #2F2F2F 0%, #5C5C5C 100%);
+}
+footer h2 {
+  padding-top: 2.75rem;
+}
+footer .contatctBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.625rem 0 7rem 0;
+}
+footer .contatctBlock .contactBlockText p {
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

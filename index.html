@@ -166,10 +166,34 @@
 				</div>
 			</div>
 		</section>
-		<section class="contactForm"></section>
-		<section class="contact"></section>
+		<section class="contactForm">
+			<div class="col-3 mainFormBlock">
+				<h2 class="title">Узнайте дату новоселья уже сегодня!</h2>
+				<form action="get" class="formBlock">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Телефон">
+					<textarea name="mess" id="mess" cols="30" rows="10" placeholder="Комментарий"></textarea>
+				</form>
+				<button class="callBack">Оставить заявку</button>
+				<p>*Ваши данные конфиденциальны</p>
+			</div>
+		</section>
 	</main>
-	<footer></footer>
+	<footer>
+		<div class="container">
+			<h2 class="title">Контакты</h2>
+			<div class="contatctBlock">
+				<div class="contactBlockText">
+					<p>Телефон:</p>
+					<p>Email:</p>
+					<p>Адрес:</p>
+				</div>
+				<div class="contactBlockMap">
+					<img src="img/map.png" alt="Карта">
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="js/jquery-3.2.1.slim.min.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
@@ -193,7 +217,7 @@
   				variableWidth: true,
 				infinity: true,
 				centerMode: true,
-				centerPadding: '10px'
+				centerPadding: '50px'
 			});
 		});
 	</script>

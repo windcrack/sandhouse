@@ -20,6 +20,7 @@ header{
 	flex-direction: column;
 	background: url('../img/headerBg.jpg') no-repeat;
 	background-size: cover;
+	height: 100vh;
 	.header{
 		display: flex;
 		flex-direction: column;
@@ -42,7 +43,7 @@ header{
 	}
 	.arrowDown{
 		margin: auto;
-		padding-top: 10.625rem;
+		padding-top: 27.625rem;
 		cursor: pointer;
 	}
 }
@@ -87,6 +88,7 @@ h2{
 .advantages{
 	color: #fff;
 	background: url('../img/advantagesBg.jpg') no-repeat center;
+	background-size: cover;
 	.title{
 		padding-top: 2.5rem;
 	}
@@ -112,7 +114,11 @@ h2{
 		}
 	}
 }
-
+.slick-slide{
+	img{
+		padding: 1rem;
+	}
+}
 .comment{
 	background: linear-gradient(180deg, #CDEFA1 0%, #D1CDE2 100%);
 	.title{
@@ -153,8 +159,66 @@ h2{
 	}
 }
 .contactForm{
-	background: url(novosele--vazhnoe-i-radostnoe-sobytie.jpg) no-repeat center;
-
+	background: url('../img/commBg.jpg') no-repeat center;
+	background-size: cover;
+	display: flex;
+	.mainFormBlock{
+		margin-left: auto;
+		margin-top: 5.625rem;
+		display: flex;
+		flex-direction: column;
+		transform: translateX(-11rem);
+		.title{
+			font-weight: 600;
+			font-size: 24px;
+			text-align: center;
+			margin-bottom: 0.5rem;
+		}
+		.formBlock{
+			display: flex;
+			flex-direction: column;
+			input,
+			textarea{
+				margin-bottom:1.25rem;
+				padding:10px 0 10px 5px;
+				background-color: #F9E8AC;
+				border: 1px solid #000000;
+			}
+		}
+		.callBack{
+			margin: 1rem auto;
+			width: 208px;
+			height: 55px;
+			border: 2px solid #000;
+			border-radius: 5px;
+			background-color: transparent;
+			color: #000;
+		}
+		p{
+			font-weight: 300;
+			font-size: 9px;
+			text-align: center;
+			margin-bottom:4.5rem;
+		}
+	}
+}
+footer{
+	color: #fff;
+	background: linear-gradient(299.87deg, #2F2F2F 0%, #5C5C5C 100%);
+	h2{
+		padding-top:2.75rem;
+	}
+	.contatctBlock{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3.625rem 0 7rem 0;
+		.contactBlockText{
+			p{
+				padding-bottom: 2rem;
+			}
+		}
+	}
 }
 
 
