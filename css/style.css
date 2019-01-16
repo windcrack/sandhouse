@@ -36,6 +36,7 @@ header {
   font-size: 4rem;
   font-weight: 600;
   color: #fff;
+  transform: translateY(6rem);
 }
 .mainBlock .callBack {
   margin: auto;
@@ -45,6 +46,7 @@ header {
   border-radius: 5px;
   background-color: transparent;
   color: #fff;
+  transform: translateY(6rem);
 }
 .mainBlock .arrowDown {
   margin: auto;
