@@ -1,3 +1,0 @@
-function getSliderParam(class){
-	
-}

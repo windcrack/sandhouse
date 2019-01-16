@@ -74,7 +74,7 @@ header {
   padding: 2rem 0 2rem 0;
 }
 .blockDescription .sliderImg img {
-  margin: 0 1.825rem 2.5rem 0;
+  margin-bottom: 2.5rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
 }
 .blockDescription .btnBlock {
@@ -82,14 +82,18 @@ header {
   justify-content: space-between;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+
 .advantages {
   color: #fff;
   background: url("../img/advantagesBg.jpg") no-repeat center;
 }
-.advantages h2 {
-  font-weight: 600;
-  font-size: 3rem;
-  text-align: center;
+.advantages .title {
+  padding-top: 2.5rem;
 }
 .advantages .advBlock {
   display: flex;
@@ -111,6 +115,51 @@ header {
   font-weight: 600;
   font-size: 0.875rem;
   text-align: center;
+}
+
+.comment {
+  background: linear-gradient(180deg, #CDEFA1 0%, #D1CDE2 100%);
+}
+.comment .title {
+  padding: 2.5rem 0;
+}
+.comment .comBlockMain {
+  padding: 4.125rem 0 5rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+.comment .comBlockMain .comAvatar {
+  margin-right: 2rem;
+}
+.comment .comBlockMain .comText {
+  padding: 1rem;
+}
+.comment .comBlockMain .comText .name {
+  padding-bottom: 1.875rem;
+}
+
+.partners {
+  background: -webkit-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
+  background: -o-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
+  background: linear-gradient(1deg, #2F2F2F 0%, #5C5C5C 100%);
+  display: flex;
+  color: #fff;
+}
+.partners .title {
+  padding: 2.5rem 0;
+}
+.partners .partSlide {
+  margin: 6.125rem auto;
+}
+.partners .partSlide .partImg {
+  display: inline-block;
+}
+.partners .partSlide .partImg:first-child {
+  margin-left: 2rem;
+}
+
+.contactForm {
+  background: url(novosele--vazhnoe-i-radostnoe-sobytie.jpg) no-repeat center;
 }
 
 /*# sourceMappingURL=style.css.map */
