@@ -1,7 +1,10 @@
-@media screen and (min-width: 1366px){
+@media screen and (max-width: 1366px){
+	main{
+		max-width: auto;
+	}
 	.mainBlock{
 		.arrowDown{
-			padding-top: 9rem;
+			margin-top: 9rem;
 		}
 		h1,
 		.callBack{
@@ -11,6 +14,61 @@
 	.contactForm{
 		.mainFormBlock{
 			transform: translateX(-2rem);
+		}
+	}
+}
+@media screen and (max-width: 600px){
+	.mainBlock{
+		h1{
+			padding: 0;
+			font-size: $font48;
+		}
+		.arrowDown{
+			margin-top: 3rem;
+		}
+	}
+	h2{
+		font-size: $font48 - 1rem;
+	}
+	.blockDescription{
+		.btnBlock{
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+		}
+		.textDescription{
+			text-align: justify;
+			padding: 0;
+		}
+	}
+	.contactForm{
+		.mainFormBlock{
+			transform: translateX(0rem);
+		}
+	}
+	.comment{
+		.comBlockMain{
+			padding: 0.125rem 0 0 0;
+			.comAvatar{
+				display: flex;
+				img{
+					margin-top: 0;
+					margin-right: auto;
+					margin-left: auto;
+				}
+			}
+			.comText{
+				.name{
+					text-align: center;
+				}
+			}
+		}
+	}
+	.advantages{
+		.advBlock{
+			.advBlockText{
+				margin: 1rem auto;
+			}
 		}
 	}
 }

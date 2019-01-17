@@ -49,8 +49,9 @@ header {
   transform: translateY(6rem);
 }
 .mainBlock .arrowDown {
-  margin: auto;
-  padding-top: 27.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 27.625rem;
   cursor: pointer;
 }
 .mainBlock a {
@@ -66,7 +67,7 @@ header {
 .blockDescription .title {
   font-weight: 600;
   line-height: 52px;
-  font-size: 48px;
+  font-size: 3rem;
   padding: 2rem 0;
 }
 .blockDescription .callBack {
@@ -89,9 +90,11 @@ header {
 .blockDescription .btnBlock {
   display: flex;
   justify-content: space-between;
+  padding: 0 3rem;
 }
 .blockDescription .textDescription {
   text-align: justify;
+  padding: 0 3rem;
 }
 
 h2 {
@@ -230,13 +233,19 @@ footer h2 {
   padding-top: 2.75rem;
 }
 footer .contatctBlock {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 3.625rem 0 7rem 0;
+}
+footer .contatctBlock .contactBlockText {
+  margin: auto 0;
 }
 footer .contatctBlock .contactBlockText p {
   padding-bottom: 2rem;
+}
+footer .contactBlockMap {
+  display: flex;
+}
+footer .contactBlockMap img {
+  margin-left: auto;
 }
 
 .modalForm {
@@ -277,9 +286,13 @@ footer .contatctBlock .contactBlockText p {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (max-width: 1366px) {
+  main {
+    max-width: auto;
+  }
+
   .mainBlock .arrowDown {
-    padding-top: 9rem;
+    margin-top: 9rem;
   }
   .mainBlock h1,
   .mainBlock .callBack {
@@ -288,6 +301,52 @@ footer .contatctBlock .contactBlockText p {
 
   .contactForm .mainFormBlock {
     transform: translateX(-2rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainBlock h1 {
+    padding: 0;
+    font-size: 3rem;
+  }
+  .mainBlock .arrowDown {
+    margin-top: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .blockDescription .btnBlock {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .blockDescription .textDescription {
+    text-align: justify;
+    padding: 0;
+  }
+
+  .contactForm .mainFormBlock {
+    transform: translateX(0rem);
+  }
+
+  .comment .comBlockMain {
+    padding: 0.125rem 0 0 0;
+  }
+  .comment .comBlockMain .comAvatar {
+    display: flex;
+  }
+  .comment .comBlockMain .comAvatar img {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .comment .comBlockMain .comText .name {
+    text-align: center;
+  }
+
+  .advantages .advBlock .advBlockText {
+    margin: 1rem auto;
   }
 }
 

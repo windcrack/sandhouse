@@ -6,6 +6,7 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- My stile -->
 	<link rel="stylesheet" href="css/style.css">	
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -130,15 +131,17 @@
 		</section>
 		<section class="comment">
 			<div class="container">
-				<h2 class="title" id="comm">Отзывы наших клиентов</h2>
+			<h2 class="title" id="comm">Отзывы наших клиентов</h2>
 				<div class="comBlockMain">
-					<div class="comAvatar">
-						<img src="img/avatar1.png" alt="Изображение">
-					</div>
-					<div class="comText">
-						<h3 class="name">Иван Василич</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore omnis officia dolores maiores ex enim harum incidunt totam, temporibus blanditiis! Facilis provident veritatis maiores nostrum, quidem harum, dolores quas earum, tempore necessitatibus possimus. Libero unde ea dignissimos necessitatibus, dolorem sequi temporibus quibusdam enim facere cupiditate ducimus sit assumenda consectetur nulla?</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ducimus esse earum aspernatur nisi magni quibusdam alias incidunt recusandae. Fuga?</p>
+					<div class="row">
+						<div class="comAvatar col-md-12 col-lg-2">
+							<img src="img/avatar1.png" alt="Изображение">
+						</div>
+						<div class="comText col-md-12 col-lg-8 ml-lg-5">
+							<h3 class="name">Иван Василич</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore omnis officia dolores maiores ex enim harum incidunt totam, temporibus blanditiis! Facilis provident veritatis maiores nostrum, quidem harum, dolores quas earum, tempore necessitatibus possimus. Libero unde ea dignissimos necessitatibus, dolorem sequi temporibus quibusdam enim facere cupiditate ducimus sit assumenda consectetur nulla?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ducimus esse earum aspernatur nisi magni quibusdam alias incidunt recusandae. Fuga?</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -174,7 +177,7 @@
 			</div>
 		</section>
 		<section class="contactForm">
-			<div class="col-3 mainFormBlock">
+			<div class="col-lg-3 col-md-12 mainFormBlock">
 				<h2 class="title">Узнайте дату новоселья уже сегодня!</h2>
 				<form action="get" class="formBlock">
 					<input type="text" placeholder="Имя">
@@ -190,13 +193,15 @@
 		<div class="container">
 			<h2 class="title" id="footer">Контакты</h2>
 			<div class="contatctBlock">
-				<div class="contactBlockText">
-					<p>Телефон:</p>
-					<p>Email:</p>
-					<p>Адрес:</p>
-				</div>
-				<div class="contactBlockMap">
-					<img src="img/map.png" alt="Карта">
+				<div class="row">
+					<div class="contactBlockText col-lg-6 col-md-12">
+						<p>Телефон:</p>
+						<p>Email:</p>
+						<p>Адрес:</p>
+					</div>
+					<div class="contactBlockMap col-lg-6 col-md-12">
+						<img src="img/map.png" alt="Карта">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -224,7 +229,17 @@
   				variableWidth: true,
 				infinity: true,
 				centerMode: true,
-				centerPadding: '50px'
+				centerPadding: '50px',
+				responsive: [
+					{
+				      breakpoint: 600,
+				      settings: {
+				        slidesToShow: 1,
+				        slidesToScroll: 1,
+				        arrows: false
+				      }
+				    }
+				]
 			});
 		});
 	</script>
