@@ -1,3 +1,4 @@
+$lightYellow: #F9E8AC;
 *{
 	margin: 0;
 	padding: 0;
@@ -15,6 +16,7 @@ main{
 header{
 	padding: 0 1.75rem;
 }
+
 .mainBlock{
 	display: flex;
 	flex-direction: column;
@@ -48,6 +50,12 @@ header{
 		padding-top: 27.625rem;
 		cursor: pointer;
 	}
+	a{
+		color: #fff;
+		&:hover{
+			color: $lightYellow;
+		}
+	}
 }
 .blockDescription{
 	background: linear-gradient(165.95deg, #D1C6B0 0%, #FFFFFF 50.83%, #D3D3D3 100%);
@@ -56,6 +64,7 @@ header{
 		line-height: 52px;
 		font-size: 48px;
 		padding:2rem 0;
+		// text-align: justify;
 	}
 	.callBack{
 		margin-bottom: auto;
@@ -77,9 +86,9 @@ header{
 	.btnBlock{
 		display: flex;
 		justify-content: space-between;
-		// button:first-child{
-		// 	align-self: flex-start;
-		// }
+	}
+	.textDescription{
+		text-align: justify;
 	}
 }
 h2{
@@ -116,11 +125,6 @@ h2{
 		}
 	}
 }
-.slick-slide{
-	img{
-		padding: 1rem;
-	}
-}
 .comment{
 	background: linear-gradient(180deg, #CDEFA1 0%, #D1CDE2 100%);
 	.title{
@@ -132,6 +136,9 @@ h2{
 		justify-content: space-around;
 		.comAvatar{
 			margin-right: 2rem;
+			img{
+				margin-top: 1.5rem;
+			}
 		}
 		.comText{
 			padding: 1rem;
@@ -149,6 +156,11 @@ h2{
 	color: #fff;
 	.title{
 		padding: 2.5rem 0;
+	}
+	.slick-slide{
+		img{
+			padding: 1rem;
+		}
 	}
 	.partSlide{
 		margin:6.125rem auto;
@@ -169,7 +181,7 @@ h2{
 		margin-top: 5.625rem;
 		display: flex;
 		flex-direction: column;
-		transform: translateX(-11rem);
+		transform: translateX(-2rem);
 		.title{
 			font-weight: 600;
 			font-size: 24px;
@@ -183,7 +195,7 @@ h2{
 			textarea{
 				margin-bottom:1.25rem;
 				padding:10px 0 10px 5px;
-				background-color: #F9E8AC;
+				background-color: $lightYellow;
 				border: 1px solid #000000;
 			}
 		}
@@ -222,6 +234,44 @@ footer{
 		}
 	}
 }
+// Modal
+.modalForm{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	position: fixed;
+	z-index: 5000;
+}
+.modal{
+	background: linear-gradient(180deg, #CDEFA1 0%, #D1CDE2 100%);
+	top: 30%;
+	left: 25%;
+	width: 50%;
+	height: 60%;
+	.modalMainBlock{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	img{
+		margin: 3rem;
+	}
+	.modalText{
+		padding: 2rem;
+		text-align: center;
+	}
+	.modalClose{
+		font-size: 2rem;
+		position: absolute;
+		right: 1rem;
+		top: 0;
+		line-height: initial;
+		cursor: pointer;
+	}
+}
 
 
-@import 'media';
+@import "media";

@@ -1,0 +1,16 @@
+@media screen and (min-width: 1366px){
+	.mainBlock{
+		.arrowDown{
+			padding-top: 9rem;
+		}
+		h1,
+		.callBack{
+			transform: translateY(0);
+		}
+	}
+	.contactForm{
+		.mainFormBlock{
+			transform: translateX(-2rem);
+		}
+	}
+}
