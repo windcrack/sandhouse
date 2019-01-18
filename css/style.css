@@ -30,6 +30,9 @@ header {
   display: flex;
   flex-direction: column;
 }
+.mainBlock a {
+  margin: auto;
+}
 .mainBlock h1 {
   text-align: center;
   padding: 0rem 6rem 3rem 6rem;
@@ -47,6 +50,7 @@ header {
   background-color: transparent;
   color: #fff;
   transform: translateY(6rem);
+  cursor: pointer;
 }
 .mainBlock .arrowDown {
   margin-left: auto;
@@ -71,6 +75,9 @@ header {
   padding: 2rem 0;
 }
 .blockDescription .callBack {
+  cursor: pointer;
+}
+.blockDescription .callBack button {
   margin-bottom: auto;
   width: 208px;
   height: 55px;
@@ -157,10 +164,11 @@ h2 {
   padding-bottom: 1.875rem;
 }
 
+.general {
+  background: linear-gradient(299.87deg, #2F2F2F 0%, #5C5C5C 100%);
+}
+
 .partners {
-  background: -webkit-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
-  background: -o-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
-  background: linear-gradient(1deg, #2F2F2F 0%, #5C5C5C 100%);
   display: flex;
   color: #fff;
 }
@@ -187,7 +195,8 @@ h2 {
 }
 .contactForm .mainFormBlock {
   margin-left: auto;
-  margin-top: 5.625rem;
+  margin-top: 9.625rem;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   transform: translateX(-2rem);
@@ -217,6 +226,7 @@ h2 {
   border-radius: 5px;
   background-color: transparent;
   color: #000;
+  cursor: pointer;
 }
 .contactForm .mainFormBlock p {
   font-weight: 300;
@@ -227,7 +237,6 @@ h2 {
 
 footer {
   color: #fff;
-  background: linear-gradient(299.87deg, #2F2F2F 0%, #5C5C5C 100%);
 }
 footer h2 {
   padding-top: 2.75rem;
@@ -244,7 +253,7 @@ footer .contatctBlock .contactBlockText p {
 footer .contactBlockMap {
   display: flex;
 }
-footer .contactBlockMap img {
+footer .contactBlockMap iframe {
   margin-left: auto;
 }
 
@@ -316,6 +325,16 @@ footer .contactBlockMap img {
     font-size: 2rem;
   }
 
+  .blockDescription .callBack {
+    display: flex;
+    margin: 1rem 0;
+  }
+  .blockDescription .callBack button {
+    margin: auto;
+  }
+  .blockDescription .callBack:first-child {
+    padding-top: 1rem;
+  }
   .blockDescription .btnBlock {
     display: flex;
     justify-content: space-between;
@@ -335,11 +354,15 @@ footer .contactBlockMap img {
   }
   .comment .comBlockMain .comAvatar {
     display: flex;
+    margin-right: 0;
   }
   .comment .comBlockMain .comAvatar img {
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
+  }
+  .comment .comBlockMain .comText {
+    text-align: justify;
   }
   .comment .comBlockMain .comText .name {
     text-align: center;
@@ -347,6 +370,12 @@ footer .contactBlockMap img {
 
   .advantages .advBlock .advBlockText {
     margin: 1rem auto;
+  }
+
+  .modal {
+    width: 87%;
+    height: 50%;
+    left: 7%;
   }
 }
 

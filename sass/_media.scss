@@ -31,6 +31,16 @@
 		font-size: $font48 - 1rem;
 	}
 	.blockDescription{
+		.callBack{
+			display: flex;
+			margin: 1rem 0;
+			button{
+				margin: auto;
+			}
+			&:first-child{
+				padding-top: 1rem;
+			}
+		}
 		.btnBlock{
 			display: flex;
 			justify-content: space-between;
@@ -51,6 +61,7 @@
 			padding: 0.125rem 0 0 0;
 			.comAvatar{
 				display: flex;
+				margin-right: 0;
 				img{
 					margin-top: 0;
 					margin-right: auto;
@@ -58,6 +69,7 @@
 				}
 			}
 			.comText{
+				text-align: justify;
 				.name{
 					text-align: center;
 				}
@@ -70,5 +82,10 @@
 				margin: 1rem auto;
 			}
 		}
+	}
+	.modal{
+		width: 87%;
+		height: 50%;
+		left: 7%;
 	}
 }

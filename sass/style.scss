@@ -28,6 +28,9 @@ header{
 		display: flex;
 		flex-direction: column;
 	}
+	a{
+		margin: auto;
+	}
 	h1{
 		text-align: center;
 		padding: 0rem 6rem 3rem 6rem;
@@ -45,6 +48,7 @@ header{
 		background-color: transparent;
 		color: #fff;
 		transform: translateY(6rem);
+		cursor: pointer;
 	}
 	.arrowDown{
 		margin-left: auto;
@@ -66,17 +70,19 @@ header{
 		line-height: 52px;
 		font-size: $font48;
 		padding:2rem 0;
-		// text-align: justify;
 	}
 	.callBack{
-		margin-bottom: auto;
-		width: 208px;
-		height: 55px;
-		border: 2px solid #FFF;
-		border-radius: 5px;
-		background-color: transparent;
-		color: #fff;
-		filter: invert(100%);
+		cursor: pointer;
+		button{
+			margin-bottom: auto;
+			width: 208px;
+			height: 55px;
+			border: 2px solid #FFF;
+			border-radius: 5px;
+			background-color: transparent;
+			color: #fff;
+			filter: invert(100%);
+		}
 	}
 	.sliderImg{
 		padding: 2rem 0 2rem 0;
@@ -129,6 +135,7 @@ h2{
 		}
 	}
 }
+
 .comment{
 	background: linear-gradient(180deg, #CDEFA1 0%, #D1CDE2 100%);
 	.title{
@@ -152,10 +159,13 @@ h2{
 		}
 	}
 }
+.general{
+	background: linear-gradient(299.87deg, #2F2F2F 0%, #5C5C5C 100%);
+}
 .partners{
-	background: -webkit-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
-	background: -o-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
-	background: linear-gradient(1deg, #2F2F2F 0%, #5C5C5C 100%);
+	// background: -webkit-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
+	// background: -o-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
+	// background: linear-gradient(1deg, #2F2F2F 0%, #5C5C5C 100%);
 	display: flex;
 	color: #fff;
 	.title{
@@ -182,7 +192,8 @@ h2{
 	display: flex;
 	.mainFormBlock{
 		margin-left: auto;
-		margin-top: 5.625rem;
+		margin-top: 9.625rem;
+		padding: 1rem 0;
 		display: flex;
 		flex-direction: column;
 		transform: translateX(-2rem);
@@ -211,6 +222,7 @@ h2{
 			border-radius: 5px;
 			background-color: transparent;
 			color: #000;
+			cursor: pointer;
 		}
 		p{
 			font-weight: 300;
@@ -222,7 +234,7 @@ h2{
 }
 footer{
 	color: #fff;
-	background: linear-gradient(299.87deg, #2F2F2F 0%, #5C5C5C 100%);
+	// background: linear-gradient(299.87deg, #2F2F2F 0%, #5C5C5C 100%);
 	h2{
 		padding-top:2.75rem;
 	}
@@ -237,7 +249,7 @@ footer{
 	}
 	.contactBlockMap{
 		display: flex;
-		img{
+		iframe{
 			margin-left: auto;
 		}
 	}

@@ -62,4 +62,66 @@ $(document).ready(function(){
 		e.preventDefault();
 		// return false;
 	});
+	$('[href="#app"]').on('click', function (e) {
+		let godapp = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(godapp.attr('href')).offset().top
+		}, 1000);
+		e.preventDefault();
+		// return false;
+	});
+	// Телефоны
+	$(function(){
+	  //2. Получить элемент, к которому необходимо добавить маску
+	  $("#phone").mask("8(999) 999-99-99");
+	});
+	
+	// Слайдер
+	$('.sliderImg').slick({
+		infinity: false,
+		arrows: false,
+		rows: 2,
+		slidesPerRow: 2,
+		slideToShow: 4,
+		centerMode: true,
+		centerPadding: '45px',
+		responsive: [
+		    {
+		      	breakpoint: 600,
+		      	settings: {
+		        	slidesToShow: 1,
+		        	slidesToScroll: 1,
+		        	infinite: true,
+		        	dots: false,
+		        	slidesPerRow: 1,
+		      	}
+		    }
+		]
+	});
+
+	$('.partSlide').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		variableWidth: true,
+		infinity: true,
+		centerMode: true,
+		centerPadding: '50px',
+		responsive: [
+			{
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        arrows: false
+		      }
+		    }
+		]
+	});
+	// Paralax
+	$('.advantages').paroller({
+		factor: 1,            // multiplier for scrolling speed and offset
+        factorXs: 0.1,           // multiplier for scrolling speed and offset
+        type: 'background',     // background, foreground
+        direction: 'vertical' // vertical, horizontal
+	});
 });
