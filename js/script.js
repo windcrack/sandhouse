@@ -4,20 +4,24 @@ $(document).ready(function(){
 		more = document.querySelector('.more'),
 		modalClose = document.querySelector('.modalClose'),
 		modalForm = document.querySelector('.modalForm');
+		data = {
+			img: '<img src="img/partnet2.png">',
+			textmodal: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vero unde earum impedit hic aliquid possimus aliquam, vel veritatis eveniet at, distinctio quibusdam ea. Cum consectetur sapiente consequuntur, ipsam harum repellendus, numquam, perspiciatis ad, sit delectus nemo sequi deserunt illo amet praesentium! Quod fugiat, nihil necessitatibus soluta odio itaque nisi.'
+		}
 	body.addEventListener('click', e => {
 		let target = e.target;
 		if(target == plan){
 			$('.modal').slideDown(300);
 			$('.modalForm').show(300);
 			$('body').css('overflow-y', 'hidden');
-			$('.modalMainBlock').html('<img src="img/partnet2.png">');
+			$('.modalMainBlock').html(data.img);
 			
 		}
 		if (target == more) {
 			$('.modal').slideDown(300);
 			$('.modalForm').show(300);
 			$('body').css('overflow-y', 'hidden');
-			$('.modalMainBlock').html('<p class="modalText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vero unde earum impedit hic aliquid possimus aliquam, vel veritatis eveniet at, distinctio quibusdam ea. Cum consectetur sapiente consequuntur, ipsam harum repellendus, numquam, perspiciatis ad, sit delectus nemo sequi deserunt illo amet praesentium! Quod fugiat, nihil necessitatibus soluta odio itaque nisi.</p>');
+			$('.modalMainBlock').html(`<p class="modalText">${data.textmodal}</p>`);
 		}
 		if(target == modalClose){
 			$('.modal').slideUp(300);
@@ -119,9 +123,42 @@ $(document).ready(function(){
 	});
 	// Paralax
 	$('.advantages').paroller({
-		factor: 1,            // multiplier for scrolling speed and offset
-        factorXs: 0.1,           // multiplier for scrolling speed and offset
+		factor: 0.5,            // multiplier for scrolling speed and offset
+        factorXs: 0.5,           // multiplier for scrolling speed and offset
         type: 'background',     // background, foreground
         direction: 'vertical' // vertical, horizontal
+	});
+	// Scroll effect
+	$('.textDescription').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+	    offset: 300    
+   	});
+   	$('.sliderImg').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated lightSpeedIn', // Class to add to the elements when they are visible
+	    offset: 100    
+   	});
+   	$('.contactBlockText').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+	    offset: 300    
+   	});
+   	$('.contactBlockMap').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated lightSpeedIn', // Class to add to the elements when they are visible
+	    offset: 100    
+   	});
+   	$('.advBlock').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+	    offset: 100    
+	});
+	$('.partSlide').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+	    offset: 100    
+   	});
+   	$('.comBlockMain').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated flipInX', // Class to add to the elements when they are visible
+	    offset: 100    
+   	});
+   	$('.mainFormBlock').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+	    offset: 100    
 	});
 });

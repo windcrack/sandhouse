@@ -17,7 +17,12 @@ main{
 header{
 	padding: 0 1.75rem;
 }
-
+.hidden{
+	opacity:0;
+}
+.visible{
+	opacity:1;
+}
 .mainBlock{
 	display: flex;
 	flex-direction: column;
@@ -49,6 +54,8 @@ header{
 		color: #fff;
 		transform: translateY(6rem);
 		cursor: pointer;
+		-webkit-transition: 1s ease-out;
+   		transition: 1s ease-out;
 	}
 	.arrowDown{
 		margin-left: auto;
@@ -73,6 +80,8 @@ header{
 	}
 	.callBack{
 		cursor: pointer;
+		-webkit-transition: 1s ease-out;
+   		transition: 1s ease-out;
 		button{
 			margin-bottom: auto;
 			width: 208px;
@@ -106,6 +115,9 @@ h2{
 	font-size: $font48;
 	text-align: center;
 }
+.gen{
+	background: linear-gradient(180deg, #CDEFA1 0%, #D1CDE2 100%);
+}
 .advantages{
 	color: #fff;
 	background: url('../img/advantagesBg.jpg') no-repeat center;
@@ -137,7 +149,6 @@ h2{
 }
 
 .comment{
-	background: linear-gradient(180deg, #CDEFA1 0%, #D1CDE2 100%);
 	.title{
 		padding: 2.5rem 0;
 	}
@@ -163,9 +174,6 @@ h2{
 	background: linear-gradient(299.87deg, #2F2F2F 0%, #5C5C5C 100%);
 }
 .partners{
-	// background: -webkit-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
-	// background: -o-linear-gradient(271deg, #2F2F2F 0%, #5C5C5C 100%);
-	// background: linear-gradient(1deg, #2F2F2F 0%, #5C5C5C 100%);
 	display: flex;
 	color: #fff;
 	.title{
@@ -187,21 +195,20 @@ h2{
 	}
 }
 .contactForm{
-	background: url('../img/commBg.jpg') no-repeat center;
+	background: url('../img/commBg.jpg') center;
 	background-size: cover;
 	display: flex;
+	padding: 6rem 0;
 	.mainFormBlock{
-		margin-left: auto;
-		margin-top: 9.625rem;
 		padding: 1rem 0;
 		display: flex;
 		flex-direction: column;
-		transform: translateX(-2rem);
+		margin: 9.625rem 10rem 0 auto;
 		.title{
 			font-weight: 600;
 			font-size: 24px;
 			text-align: center;
-			margin-bottom: 0.5rem;
+			margin: 2.5rem 0;
 		}
 		.formBlock{
 			display: flex;
@@ -223,6 +230,8 @@ h2{
 			background-color: transparent;
 			color: #000;
 			cursor: pointer;
+			-webkit-transition: 1s ease-out;
+   			transition: 1s ease-out;
 		}
 		p{
 			font-weight: 300;
@@ -274,13 +283,13 @@ footer{
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
-		
+		align-content: center;	
 	}
 	img{
-		margin: 3rem;
+		margin: 20% 3rem;
 	}
 	.modalText{
-		padding: 2rem;
+		padding: 25% 2rem 0 2rem;
 		text-align: center;
 	}
 	.modalClose{
@@ -292,6 +301,6 @@ footer{
 		cursor: pointer;
 	}
 }
-
+// @import "button";
 
 @import "media";

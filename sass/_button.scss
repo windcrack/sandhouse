@@ -1,0 +1,22 @@
+[data-type="pos_aware"]{
+  &:before{
+    content:'';
+    position:absolute;
+    top:-20px;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%) scale(1);
+    transform:translate(-50%, -50%) scale(1);
+    display:block;
+    width:40px;
+    height:40px;
+    background:#fff;
+    border-radius:50px;
+  }
+  &:hover{
+    &:before{
+     
+      -webkit-transform:scale(8.3);
+      transform:scale(8.3);
+    }
+  }
+}

@@ -7,10 +7,11 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- My stile -->
+	<!-- My style -->
 	<link rel="stylesheet" href="css/style.css">	
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>			
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>		
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
 </head>
@@ -47,7 +48,7 @@
 			<div class="container header">
 				<h1>Зайди в свой дом прямо сейчас</h1>
 				<a href="#app">
-					<button class="callBack application">
+					<button class="callBack application" data-type="pos_aware">
 						Оставить заявку
 					</button>
 				</a>
@@ -65,10 +66,10 @@
 						</div>
 						<div class="btnBlock">
 							<div class="row">
-								<div class="col-lg-6 col-md-12 callBack">
+								<div class="col-lg-6 col-md-12 callBack" data-type="pos_aware">
 									<button class="more">Подробнее</button>
 								</div>
-								<div class="col-lg-6 col-md-12 callBack">
+								<div class="col-lg-6 col-md-12 callBack" data-type="pos_aware">
 									<button class="plan">План дома</button>
 								</div>
 							</div>
@@ -85,75 +86,77 @@
 				</div>
 			</div>
 		</section>
-		<section class="advantages">
-			<h2 class="title">Преимущества Sands House</h2>
-			<div class="container advBlock">
-				<div class="advBlockText">
-					<div class="imgTitle">
-						<img src="img/time.svg" alt="Время">
-					</div>
-					<div class="advText">
-						<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
-					</div>
-				</div>
-				<div class="advBlockText">
-					<div class="imgTitle">
-						<img src="img/document.svg" alt="Докумет">
-					</div>
-					<div class="advText">
-						<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
-					</div>
-				</div>
-				<div class="advBlockText">
-					<div class="imgTitle">
-						<img src="img/like.svg" alt="Класс">
-					</div>
-					<div class="advText">
-						<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
-					</div>
-				</div>
-				<div class="advBlockText">
-					<div class="imgTitle">
-						<img src="img/home.svg" alt="Дом">
-					</div>
-					<div class="advText">
-						<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
-					</div>
-				</div>
-				<div class="advBlockText">
-					<div class="imgTitle">
-						<img src="img/engineer.svg" alt="Инженер">
-					</div>
-					<div class="advText">
-						<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
-					</div>
-				</div>
-				<div class="advBlockText">
-					<div class="imgTitle">
-						<img src="img/help.svg" alt="Помощь">
-					</div>
-					<div class="advText">
-						<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="comment">
-			<div class="container">
-			<h2 class="title" id="comm">Отзывы наших клиентов</h2>
-				<div class="comBlockMain">
-					<div class="row">
-						<div class="comAvatar col-md-12 col-lg-2">
-							<img src="img/avatar1.png" alt="Изображение">
+		<section class="gen">
+			<section class="advantages">
+				<h2 class="title">Преимущества Sands House</h2>
+				<div class="container advBlock">
+					<div class="advBlockText">
+						<div class="imgTitle">
+							<img src="img/time.svg" alt="Время">
 						</div>
-						<div class="comText col-md-12 col-lg-8 ml-lg-5">
-							<h3 class="name">Иван Василич</h3>
-							<p class="justifyMob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore omnis officia dolores maiores ex enim harum incidunt totam, temporibus blanditiis! Facilis provident veritatis maiores nostrum, quidem harum, dolores quas earum, tempore necessitatibus possimus. Libero unde ea dignissimos necessitatibus, dolorem sequi temporibus quibusdam enim facere cupiditate ducimus sit assumenda consectetur nulla?</p>
-							<p class="justifyMob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ducimus esse earum aspernatur nisi magni quibusdam alias incidunt recusandae. Fuga?</p>
+						<div class="advText">
+							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+						</div>
+					</div>
+					<div class="advBlockText">
+						<div class="imgTitle">
+							<img src="img/document.svg" alt="Докумет">
+						</div>
+						<div class="advText">
+							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+						</div>
+					</div>
+					<div class="advBlockText">
+						<div class="imgTitle">
+							<img src="img/like.svg" alt="Класс">
+						</div>
+						<div class="advText">
+							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+						</div>
+					</div>
+					<div class="advBlockText">
+						<div class="imgTitle">
+							<img src="img/home.svg" alt="Дом">
+						</div>
+						<div class="advText">
+							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+						</div>
+					</div>
+					<div class="advBlockText">
+						<div class="imgTitle">
+							<img src="img/engineer.svg" alt="Инженер">
+						</div>
+						<div class="advText">
+							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+						</div>
+					</div>
+					<div class="advBlockText">
+						<div class="imgTitle">
+							<img src="img/help.svg" alt="Помощь">
+						</div>
+						<div class="advText">
+							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+			<section class="comment">
+				<div class="container">
+				<h2 class="title" id="comm">Отзывы наших клиентов</h2>
+					<div class="comBlockMain">
+						<div class="row">
+							<div class="comAvatar col-md-12 col-lg-2">
+								<img src="img/avatar1.png" alt="Изображение">
+							</div>
+							<div class="comText col-md-12 col-lg-8">
+								<h3 class="name">Иван Василич</h3>
+								<p class="justifyMob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore omnis officia dolores maiores ex enim harum incidunt totam, temporibus blanditiis! Facilis provident veritatis maiores nostrum, quidem harum, dolores quas earum, tempore necessitatibus possimus. Libero unde ea dignissimos necessitatibus, dolorem sequi temporibus quibusdam enim facere cupiditate ducimus sit assumenda consectetur nulla?</p>
+								<p class="justifyMob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ducimus esse earum aspernatur nisi magni quibusdam alias incidunt recusandae. Fuga?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</section>
 		<div class="general">
 			<section class="partners">
@@ -194,7 +197,7 @@
 						<input type="text" placeholder="Телефон" id="phone">
 						<textarea name="mess" id="mess" cols="30" rows="5" placeholder="Комментарий"></textarea>
 					</form>
-					<button class="callBack">Оставить заявку</button>
+					<button class="callBack" data-type="pos_aware">Оставить заявку</button>
 					<p>*Ваши данные конфиденциальны</p>
 				</div>
 			</section>
@@ -228,6 +231,8 @@
 	<script src="js/jquery.paroller.min.js"></script>
 	<!-- Phone -->
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- Scroll effect -->
+	<script src="js/viewportchecker.js"></script>
 	<!-- Main script -->
 	<script src="js/script.js"></script>
 </body>
