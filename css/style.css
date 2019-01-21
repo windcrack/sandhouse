@@ -350,16 +350,18 @@ footer .contactBlockMap iframe {
   }
 }
 @media screen and (max-width: 1024px) {
-  .textDescription,
-  .btnBlock {
+  .blockDescription .textDescription,
+  .blockDescription .btnBlock {
     padding: 0;
   }
-
-  .sliderImg {
+  .blockDescription .sliderImg {
     display: flex;
   }
-  .sliderImg img {
+  .blockDescription .sliderImg img {
     margin: 1rem;
+  }
+  .blockDescription .sliderImg .slick-list {
+    margin: auto !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -373,7 +375,10 @@ footer .contactBlockMap iframe {
     box-shadow: none;
   }
   .sliderImg img {
-    margin: 1rem;
+    margin: 0 auto;
+  }
+  .sliderImg .slick-list {
+    margin: auto !important;
   }
 
   .comment .comBlockMain .comAvatar {
@@ -385,13 +390,16 @@ footer .contactBlockMap iframe {
   .comment .comBlockMain .comText .name {
     text-align: center;
   }
+  .comment .comBlockMain p {
+    color: #000;
+  }
 
   .contactForm .mainFormBlock {
-    color: #7d0c0c;
+    color: #fff;
     margin: auto;
   }
-  .contactForm .mainFormBlock p {
-    color: #000;
+  .contactForm .mainFormBlock .title {
+    text-shadow: 1px 1px 2px black, 0 0 0.5rem #000;
   }
 }
 @media screen and (max-width: 600px) {
@@ -426,10 +434,19 @@ footer .contactBlockMap iframe {
     text-align: justify;
     padding: 0;
   }
+  .blockDescription .sliderImg img {
+    margin: auto;
+  }
 
   .contactForm .mainFormBlock {
     transform: translateX(0rem);
     margin: 9.625rem auto 0 auto;
+  }
+  .contactForm .title {
+    text-shadow: 1px 1px 2px black, 0 0 0.5rem #000;
+  }
+  .contactForm p {
+    color: #000;
   }
 
   .comment .comBlockMain {
