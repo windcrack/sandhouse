@@ -59,8 +59,6 @@ header {
   color: #fff;
   transform: translateY(6rem);
   cursor: pointer;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
 }
 .mainBlock .arrowDown {
   margin-left: auto;
@@ -165,13 +163,14 @@ h2 {
   justify-content: space-around;
 }
 .comment .comBlockMain .comAvatar {
-  margin-right: 2rem;
+  margin: auto;
 }
 .comment .comBlockMain .comAvatar img {
   margin-top: 1.5rem;
 }
 .comment .comBlockMain .comText {
   padding: 1rem;
+  margin: auto;
 }
 .comment .comBlockMain .comText .name {
   padding-bottom: 1.875rem;
@@ -239,8 +238,6 @@ h2 {
   background-color: transparent;
   color: #000;
   cursor: pointer;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
 }
 .contactForm .mainFormBlock p {
   font-weight: 300;

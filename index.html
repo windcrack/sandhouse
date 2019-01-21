@@ -96,7 +96,7 @@
 							<img src="img/time.svg" alt="Время">
 						</div>
 						<div class="advText">
-							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+							<p>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</p>
 						</div>
 					</div>
 					<div class="advBlockText">
@@ -104,7 +104,7 @@
 							<img src="img/document.svg" alt="Докумет">
 						</div>
 						<div class="advText">
-							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+							<p>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</p>
 						</div>
 					</div>
 					<div class="advBlockText">
@@ -112,7 +112,7 @@
 							<img src="img/like.svg" alt="Класс">
 						</div>
 						<div class="advText">
-							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+							<p>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</p>
 						</div>
 					</div>
 					<div class="advBlockText">
@@ -120,7 +120,7 @@
 							<img src="img/home.svg" alt="Дом">
 						</div>
 						<div class="advText">
-							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+							<p>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</p>
 						</div>
 					</div>
 					<div class="advBlockText">
@@ -128,7 +128,7 @@
 							<img src="img/engineer.svg" alt="Инженер">
 						</div>
 						<div class="advText">
-							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+							<p>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</p>
 						</div>
 					</div>
 					<div class="advBlockText">
@@ -136,7 +136,7 @@
 							<img src="img/help.svg" alt="Помощь">
 						</div>
 						<div class="advText">
-							<span>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</span>
+							<p>Сроки 1год Пригласите друзей на новоселие. Можете зайти в свой будущий дом уже сегодня.</p>
 						</div>
 					</div>
 				</div>
@@ -193,12 +193,12 @@
 			<section class="contactForm" id="app">
 				<div class="col-lg-3 col-sm-12 col-md-8 mainFormBlock">
 					<h2 class="title">Узнайте дату новоселья уже сегодня!</h2>
-					<form action="get" class="formBlock">
-						<input type="text" placeholder="Имя">
-						<input type="text" placeholder="Телефон" id="phone">
-						<textarea name="mess" id="mess" cols="30" rows="5" placeholder="Комментарий"></textarea>
+					<form class="formBlock" id="form" method="POST">
+						<input type="text" name="name" placeholder="Имя">
+						<input type="text" name="phone" placeholder="Телефон" id="phone">
+						<textarea name="mess" name="text" id="mess" cols="30" rows="5" placeholder="Комментарий"></textarea>
+						<button class="callBack" data-type="pos_aware">Оставить заявку</button>
 					</form>
-					<button class="callBack" data-type="pos_aware">Оставить заявку</button>
 					<p>*Ваши данные конфиденциальны</p>
 				</div>
 			</section>

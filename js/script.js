@@ -76,7 +76,6 @@ $(document).ready(function(){
 	});
 	// Телефоны
 	$(function(){
-	  //2. Получить элемент, к которому необходимо добавить маску
 	  $("#phone").mask("8(999) 999-99-99");
 	});
 	
@@ -121,44 +120,58 @@ $(document).ready(function(){
 		    }
 		]
 	});
+	// Mail
+    $("#form").submit(function(e) { //устанавливаем событие отправки для формы с id=form
+    	e.preventDefault();
+        var form_data = $(this).serialize(); //собераем все данные из формы
+        $.ajax({
+        type: "POST", //Метод отправки
+        url: "form.php", //путь до php фаила отправителя
+        data: form_data,
+        success: function() {
+               //код в этом блоке выполняется при успешной отправке сообщения
+               alert("Ваше сообщение отпрвлено!");
+           }
+        });
+    });
 	// Paralax
-	// $('.advantages').paroller({
-	// 	factor: 0.5,            // multiplier for scrolling speed and offset
- //        factorXs: 0.5,           // multiplier for scrolling speed and offset
- //        type: 'background',     // background, foreground
- //        direction: 'vertical' // vertical, horizontal
-	// });
-	// // Scroll effect
-	// $('.textDescription').addClass("hidden").viewportChecker({
-	//     classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
-	//     offset: 300    
- //   	});
- //   	$('.sliderImg').addClass("hidden").viewportChecker({
-	//     classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-	//     offset: 100    
- //   	});
- //   	$('.contactBlockText').addClass("hidden").viewportChecker({
-	//     classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
-	//     offset: 300    
- //   	});
- //   	$('.contactBlockMap').addClass("hidden").viewportChecker({
-	//     classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-	//     offset: 100    
- //   	});
- //   	$('.advBlock').addClass("hidden").viewportChecker({
-	//     classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-	//     offset: 100    
-	// });
-	// $('.partSlide').addClass("hidden").viewportChecker({
-	//     classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
-	//     offset: 100    
- //   	});
- //   	$('.comBlockMain').addClass("hidden").viewportChecker({
-	//     classToAdd: 'visible animated flipInX', // Class to add to the elements when they are visible
-	//     offset: 100    
- //   	});
- //   	$('.mainFormBlock').addClass("hidden").viewportChecker({
-	//     classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
-	//     offset: 100    
-	// });
+	$('.advantages').paroller({
+		factor: 0.5,            // multiplier for scrolling speed and offset
+        factorXs: 0.5,           // multiplier for scrolling speed and offset
+        type: 'background',     // background, foreground
+        direction: 'vertical' // vertical, horizontal
+	});
+	// Scroll effect
+	$('.textDescription').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+	    offset: 300    
+   	});
+   	$('.sliderImg').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+	    offset: 100    
+   	});
+   	$('.contactBlockText').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+	    offset: 300    
+   	});
+   	$('.contactBlockMap').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+	    offset: 100    
+   	});
+   	$('.advBlock').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+	    offset: 100    
+	});
+	$('.partSlide').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+	    offset: 100    
+   	});
+   	$('.comBlockMain').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated flipInX', // Class to add to the elements when they are visible
+	    offset: 100    
+   	});
+   	$('.mainFormBlock').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+	    offset: 100    
+	});
 });
