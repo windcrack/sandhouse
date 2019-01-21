@@ -87,7 +87,7 @@ $(document).ready(function(){
 		rows: 2,
 		slidesPerRow: 2,
 		slideToShow: 4,
-		centerMode: true,
+		// centerMode: true,
 		centerPadding: '45px',
 		responsive: [
 		    {
@@ -122,43 +122,43 @@ $(document).ready(function(){
 		]
 	});
 	// Paralax
-	$('.advantages').paroller({
-		factor: 0.5,            // multiplier for scrolling speed and offset
-        factorXs: 0.5,           // multiplier for scrolling speed and offset
-        type: 'background',     // background, foreground
-        direction: 'vertical' // vertical, horizontal
-	});
-	// Scroll effect
-	$('.textDescription').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
-	    offset: 300    
-   	});
-   	$('.sliderImg').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated lightSpeedIn', // Class to add to the elements when they are visible
-	    offset: 100    
-   	});
-   	$('.contactBlockText').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
-	    offset: 300    
-   	});
-   	$('.contactBlockMap').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated lightSpeedIn', // Class to add to the elements when they are visible
-	    offset: 100    
-   	});
-   	$('.advBlock').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-	    offset: 100    
-	});
-	$('.partSlide').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
-	    offset: 100    
-   	});
-   	$('.comBlockMain').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated flipInX', // Class to add to the elements when they are visible
-	    offset: 100    
-   	});
-   	$('.mainFormBlock').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
-	    offset: 100    
-	});
+	// $('.advantages').paroller({
+	// 	factor: 0.5,            // multiplier for scrolling speed and offset
+ //        factorXs: 0.5,           // multiplier for scrolling speed and offset
+ //        type: 'background',     // background, foreground
+ //        direction: 'vertical' // vertical, horizontal
+	// });
+	// // Scroll effect
+	// $('.textDescription').addClass("hidden").viewportChecker({
+	//     classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+	//     offset: 300    
+ //   	});
+ //   	$('.sliderImg').addClass("hidden").viewportChecker({
+	//     classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+	//     offset: 100    
+ //   	});
+ //   	$('.contactBlockText').addClass("hidden").viewportChecker({
+	//     classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+	//     offset: 300    
+ //   	});
+ //   	$('.contactBlockMap').addClass("hidden").viewportChecker({
+	//     classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+	//     offset: 100    
+ //   	});
+ //   	$('.advBlock').addClass("hidden").viewportChecker({
+	//     classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+	//     offset: 100    
+	// });
+	// $('.partSlide').addClass("hidden").viewportChecker({
+	//     classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+	//     offset: 100    
+ //   	});
+ //   	$('.comBlockMain').addClass("hidden").viewportChecker({
+	//     classToAdd: 'visible animated flipInX', // Class to add to the elements when they are visible
+	//     offset: 100    
+ //   	});
+ //   	$('.mainFormBlock').addClass("hidden").viewportChecker({
+	//     classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+	//     offset: 100    
+	// });
 });

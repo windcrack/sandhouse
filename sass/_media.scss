@@ -17,6 +17,85 @@
 			margin: 9.625rem 2rem 0 auto;
 		}
 	}
+	.modal{
+		img{
+			margin: 10% 3rem;
+		}
+		.modalText{
+			padding: 15% 2rem 0 2rem;
+			text-align: center;
+		}
+	}
+	.blockDescription{
+		.btnBlock{
+			.row{
+				margin: auto !important;
+			}
+		}
+	}
+	.comment{
+		.comBlockMain{
+			.comAvatar{
+				margin: auto 0 auto auto;
+			}
+			.comText{
+				margin: auto;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1024px){
+	.textDescription,
+	.btnBlock{
+		padding: 0;
+	}
+	.sliderImg{
+		display: flex;
+		img{
+			margin: 1rem;
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.btnBlock{
+		.row{
+			margin: auto !important;
+		}
+	}
+	.sliderImg{
+		display: flex;
+		padding: 0;
+		box-shadow: none;
+		img{
+			// margin: 0 auto;
+			margin: 1rem;
+
+		}
+	}
+	.comment{
+		.comBlockMain{
+			.comAvatar{
+				display: flex;
+				img{
+					margin: auto;
+				}
+			}
+			.comText{
+				.name{
+					text-align: center;
+				}
+			}
+		}
+	}
+	.contactForm{
+		.mainFormBlock{
+			color: #7d0c0c;
+			margin: auto;
+			p{
+				color: #000;
+			}
+		}
+	}
 }
 @media screen and (max-width: 600px){
 	.mainBlock{
@@ -55,7 +134,9 @@
 	.contactForm{
 		.mainFormBlock{
 			transform: translateX(0rem);
+			margin: 9.625rem auto 0 auto;
 		}
+
 	}
 	.comment{
 		.comBlockMain{
