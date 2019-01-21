@@ -96,6 +96,7 @@ header {
   background-color: transparent;
   color: #fff;
   filter: invert(100%);
+  cursor: pointer;
 }
 .blockDescription .sliderImg {
   padding: 2rem 0 2rem 0;
