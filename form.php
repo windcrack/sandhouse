@@ -1,8 +1,8 @@
 <?php 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-	$name = isset($_POST['name']) ? $_POST['name'] : null;
-	$phone = isset($_POST['phone']) ? $_POST['phone'] : null;
-	$text = isset($_POST['text']) ? $_POST['text'] : null;
+	$name = isset($_POST['name']) ? clean($_POST['name']) : null;
+	$phone = isset($_POST['phone']) ? clean($_POST['phone']) : null;
+	$text = isset($_POST['text']) ? clean($_POST['text']) : null;
 	if( $name && $phone ){ //Проверка отправилось ли наше поля name и не пустые ли они
 		$result = [
 			'commonString_1' => 'commonString_1 value',
@@ -49,4 +49,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 else {
 	header($_SERVER["SERVER_PROTOCOL"]." 405 Method Not Allowed"); 
+}
+function clean($value = "") {
+    $value = trim($value);
+    $value = stripslashes($value);
+    $value = strip_tags($value);
+    $value = htmlspecialchars($value);
+    
+    return $value;
 }
